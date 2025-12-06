@@ -109,7 +109,7 @@ style.textContent = `
 `;
 document.head.appendChild(style);
 
-// Add hover effects to skill tags and book cards
+// Add hover effects to skill tags and cards
 document.querySelectorAll('.skill-tag, .book-card, .project-card').forEach(element => {
     element.addEventListener('mouseenter', function() {
         this.style.transform = 'translateY(-8px)';
@@ -130,16 +130,5 @@ document.querySelectorAll('.skill-tag, .book-card, .project-card').forEach(eleme
     });
 });
 
-// Book status color coding
-document.querySelectorAll('.book-status').forEach(status => {
-    const text = status.textContent.toLowerCase();
-    if (text.includes('currently reading') || text.includes('in progress')) {
-        status.style.color = '#3498db';
-    } else if (text.includes('completed')) {
-        status.style.color = '#27ae60';
-    } else if (text.includes('reading soon')) {
-        status.style.color = '#f39c12';
-    }
-});
-
+// Simple console log
 console.log('Nural Rahmanli Portfolio loaded successfully!');
