@@ -110,12 +110,12 @@ style.textContent = `
 document.head.appendChild(style);
 
 // Add hover effects to skill tags and cards
-document.querySelectorAll('.skill-tag, .book-card, .project-card').forEach(element => {
+document.querySelectorAll('.skill-tag, .project-card').forEach(element => {
     element.addEventListener('mouseenter', function() {
         this.style.transform = 'translateY(-8px)';
         if (this.classList.contains('skill-tag')) {
             this.style.boxShadow = '0 8px 16px rgba(0,0,0,0.2)';
-        } else if (this.classList.contains('book-card') || this.classList.contains('project-card')) {
+        } else if (this.classList.contains('project-card')) {
             this.style.boxShadow = '0 15px 35px rgba(0,0,0,0.15)';
         }
     });
@@ -124,9 +124,57 @@ document.querySelectorAll('.skill-tag, .book-card, .project-card').forEach(eleme
         this.style.transform = 'translateY(0)';
         if (this.classList.contains('skill-tag')) {
             this.style.boxShadow = '0 4px 6px rgba(52, 152, 219, 0.2)';
-        } else if (this.classList.contains('book-card') || this.classList.contains('project-card')) {
+        } else if (this.classList.contains('project-card')) {
             this.style.boxShadow = '0 5px 15px rgba(0,0,0,0.08)';
         }
+    });
+});
+
+// Project image modal functionality
+const projectImages = document.querySelectorAll('.project-img');
+projectImages.forEach(img => {
+    img.addEventListener('click', function() {
+        // Create modal
+        const modal = document.createElement('div');
+        modal.style.cssText = `
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.9);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 2000;
+            cursor: pointer;
+        `;
+        
+        const modalImg = document.createElement('img');
+        modalImg.src = this.src;
+        modalImg.alt = this.alt;
+        modalImg.style.cssText = `
+            max-width: 90%;
+            max-height: 90%;
+            border-radius: 8px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+        `;
+        
+        modal.appendChild(modalImg);
+        document.body.appendChild(modal);
+        
+        // Close modal on click
+        modal.addEventListener('click', () => {
+            document.body.removeChild(modal);
+        });
+        
+        // Close modal on ESC key
+        document.addEventListener('keydown', function closeModal(e) {
+            if (e.key === 'Escape') {
+                document.body.removeChild(modal);
+                document.removeEventListener('keydown', closeModal);
+            }
+        });
     });
 });
 
