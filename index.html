@@ -3,47 +3,456 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nural Rahmanli</title>
+    <title>Nural Rahmanli - Personal Website</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css?family=Merriweather:400,700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
+    <!-- Navigation -->
     <header>
         <nav>
             <ul class="main-nav">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#blogs">Blogs</a></li>
+                <li><a href="#home"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="#about"><i class="fas fa-user"></i> About</a></li>
+                <li><a href="#projects"><i class="fas fa-code"></i> Projects</a></li>
+                <li><a href="#skills"><i class="fas fa-tools"></i> Skills</a></li>
+                <li><a href="#bookshelf"><i class="fas fa-book"></i> Bookshelf</a></li>
+                <li><a href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
             </ul>
         </nav>
     </header>
-    <div class="profile-photo-container">
-        <img src="myphoto.jpg" alt="Nural Rahmanli Photo" class="profile-photo" />
-    </div>
-    <h1>Nural Rahmanli</h1>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="profile-photo-container">
+            <img src="myphoto.jpg" alt="Nural Rahmanli Photo" class="profile-photo" />
+            <div class="photo-overlay">
+                <span>Nural Rahmanli</span>
+            </div>
+        </div>
+        <div class="hero-content">
+            <h1>Nural Rahmanli</h1>
+            <p class="tagline">Developer • Guitarist • Problem Solver • Lifelong Learner</p>
+            <p class="intro">Welcome to my digital space where I share my journey in technology, music, and continuous learning.</p>
+            <div class="hero-buttons">
+                <a href="#projects" class="btn-primary">View My Projects</a>
+                <a href="#bookshelf" class="btn-secondary">Explore My Bookshelf</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
     <main>
-        <section id="home">
-            <h2>Welcome to My Website</h2>
-            <p>Hello! I'm Nural Rahmanli.This is my personal website where I share information about myself, my projects, and my thoughts.</p>
-            <p>Use the navigation bar above to explore more about me, see my projects, or read my blog posts.</p>
+        <!-- About Section -->
+        <section id="about" class="content-section">
+            <h2><i class="fas fa-user"></i> About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Hello! I'm <strong>Nural Rahmanli</strong>, a passionate beginner in programming with a love for music and continuous learning. I believe in the power of technology to solve problems and the beauty of music to express emotions.</p>
+                    
+                    <p>As a <strong>problem solver</strong>, I enjoy tackling challenges and finding creative solutions. My journey in technology started with curiosity, and I'm now developing my skills in programming while also pursuing my passion for playing guitar.</p>
+                    
+                    <p>As a <strong>lifelong learner</strong>, I'm constantly exploring new areas of knowledge. Whether it's coding a new project, learning a new guitar riff, or diving into an interesting book, I believe that every day is an opportunity to learn something new.</p>
+                    
+                    <div class="interests">
+                        <div class="interest-item">
+                            <i class="fas fa-guitar"></i>
+                            <div>
+                                <h4>Music & Guitar</h4>
+                                <p>Playing guitar for 3+ years, exploring different genres from classical to modern music.</p>
+                            </div>
+                        </div>
+                        <div class="interest-item">
+                            <i class="fas fa-lightbulb"></i>
+                            <div>
+                                <h4>Problem Solving</h4>
+                                <p>Enjoy solving logical puzzles and coding challenges to improve my analytical thinking.</p>
+                            </div>
+                        </div>
+                        <div class="interest-item">
+                            <i class="fas fa-book-reader"></i>
+                            <div>
+                                <h4>Continuous Learning</h4>
+                                <p>Always seeking new knowledge in technology, science, and personal development.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="about-details">
+                    <div class="detail-item">
+                        <i class="fas fa-graduation-cap"></i>
+                        <div>
+                            <h3>Education</h3>
+                            <p>Currently pursuing Electric and Electronics Engineering at ADA University </p>
+                        </div>
+                    </div>
+                    <div class="detail-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h3>Location</h3>
+                            <p>Azerbaijan</p>
+                        </div>
+                    </div>
+                    <div class="detail-item">
+                        <i class="fas fa-language"></i>
+                        <div>
+                            <h3>Languages</h3>
+                            <p>Azerbaijani, English, Turkish</p>
+                        </div>
+                    </div>
+                    <div class="detail-item">
+                        <i class="fas fa-music"></i>
+                        <div>
+                            <h3>Music Experience</h3>
+                            <p>3+ years playing guitar</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
-        <section id="references" style="margin-top: 2rem;">
-            <h2>References</h2>
-            <ul>
-                <li><a href="https://instagram.com/yourusername" target="_blank" rel="noopener">Instagram</a></li>
-                <li><a href="https://github.com/yourusername" target="_blank" rel="noopener">GitHub Profile</a></li>
-                <li><a href="https://github.com/yourusername/your-repository" target="_blank" rel="noopener">GitHub Repository</a></li>
-                <li><a href="https://www.codecademy.com/profiles/yourusername" target="_blank" rel="noopener">Codecademy Profile</a></li>
-            </ul>
+
+        <!-- Projects Section -->
+        <section id="projects" class="content-section">
+            <h2><i class="fas fa-code"></i> My Projects</h2>
+            
+            <div class="projects-grid">
+                <!-- Hour of Code Project -->
+                <div class="project-card">
+                    <div class="project-image hour-of-code">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>Hour of Code Event</h3>
+                        <p>Organized and led an Hour of Code event at my school to introduce fellow students to programming basics. Created interactive sessions using Scratch and basic HTML to make coding accessible and fun for beginners.</p>
+                        <div class="project-tech">
+                            <span>Event Planning</span>
+                            <span>Teaching</span>
+                            <span>Scratch</span>
+                            <span>HTML Basics</span>
+                        </div>
+                        <div class="project-stats">
+                            <div class="stat">
+                                <i class="fas fa-user-graduate"></i>
+                                <span>50+ Students Reached</span>
+                            </div>
+                            <div class="stat">
+                                <i class="fas fa-clock"></i>
+                                <span>2-Day Workshop</span>
+                            </div>
+                        </div>
+                        <div class="project-achievements">
+                            <h4>Achievements:</h4>
+                            <ul>
+                                <li>Successfully introduced programming to beginners</li>
+                                <li>Created engaging learning materials</li>
+                                <li>Received positive feedback from participants</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 1 -->
+                <div class="project-card">
+                    <div class="project-image project-1">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>Project 1 </h3>
+                        <div class="project-tech">
+                            <span>Tech Stack 1</span>
+                            <span>Tech Stack 2</span>
+                            <span>Tech Stack 3</span>
+                            <span>Tech Stack 4</span>
+                        </div>
+                        <div class="project-features">
+                          
+                            <h4>Technologies Used:</h4>
+                            <ul>
+                                <li>Technology 1</li>
+                                <li>Technology 2</li>
+                                <li>Technology 3</li>
+                            </ul>
+                        </div>
+                        <div class="project-status">
+                            <span class="status-completed">Completed</span>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </section>      
+        <!-- Skills Section -->
+        <section id="skills" class="content-section">
+            <h2><i class="fas fa-tools"></i> Skills & Technologies</h2>
+            <div class="skills-container">
+                <div class="skill-category">
+                    <div class="skill-tags">
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">Adobe Premiere Pro</span>
+                        <span class="skill-tag">Problem Solving</span>
+                        <span class="skill-tag">VS Code</span>
+                        <span class="skill-tag">Git</span>
+                    </div>
+                </div>
+                
+                <!-- Skill Level Indicators -->
+                <div class="skill-levels">
+                    <h3>Skill Proficiency</h3>
+                    <div class="skill-level-item">
+                        <span class="skill-name">Python</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 20%;"></div>
+                        </div>
+                        <span class="skill-percent">20%</span>
+                    </div>
+                    
+                    <div class="skill-level-item">
+                        <span class="skill-name">Adobe Premiere Pro</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 50%;"></div>
+                        </div>
+                        <span class="skill-percent">50%</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Currently Learning -->
+            <div class="learning-section">
+                <h3><i class="fas fa-book-open"></i> Currently Learning & Improving</h3>
+                <div class="learning-items">
+                    <div class="learning-item">
+                        <i class="fab fa-python"></i>
+                        <span>Python Programming</span>
+                        <p>Learning fundamentals and building small projects</p>
+                    </div>
+                    <div class="learning-item">
+                        <i class="fas fa-video"></i>
+                        <span>Advanced Video Editing</span>
+                        <p>Mastering Premiere Pro techniques</p>
+                    </div>
+                    <div class="learning-item">
+                        <i class="fas fa-brain"></i>
+                        <span>Problem Solving Skills</span>
+                        <p>Developing analytical thinking abilities</p>
+                    </div>
+                </div>
+            </div>
         </section>
-        <section id="about" style="margin-top: 2rem;">
-            <h2>About Me</h2>
-            <div>
-                <p>Hello! I'm Nural Rahmanli, a passionate developer and lifelong learner. Welcome to my About page!</p>
-                <p>Here you can find more information about my background, interests, and skills.</p>
+
+        <!-- Bookshelf Section -->
+        <section id="bookshelf" class="content-section">
+            <h2><i class="fas fa-book"></i> My Bookshelf</h2>
+            <p class="section-intro">Here are some of the books that have influenced my thinking and helped me grow as a developer and lifelong learner.</p>
+            
+            <div class="books-grid">
+                <div class="book-card">
+                    <div class="book-cover programming">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <div class="book-info">
+                        <h3>Book 1 </h3>
+                        <h3>Book 2 </h3>
+                        <h3>Book 3 </h3>
+                        <h3>Book 4 </h3>
+
+                        <p class="book-author">Name</p>
+                        <div class="book-tags">
+                            <span class="book-tag">Tag 1</span>
+                            <span class="book-tag">Tag 2</span>
+                            <span class="book-tag">Tag 3</span>
+                        </div>
+                        <div class="book-status">
+                            <i class="fas fa-bookmark"></i>
+                            <span>Currently Reading</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="book-card">
+                    <div class="book-cover problem-solving">
+                        <i class="fas fa-puzzle-piece"></i>
+                    </div>
+                    <div class="book-info">
+                        <h3>Book 5</h3>
+                        <p class="book-author">book-author</p>
+                        <div class="book-tags">
+                            <span class="book-tag">mmm</span>   
+                            <span class="book-tag">mmmm</span>
+                            <span class="book-tag">mmmm</span>
+                        </div>
+                        <div class="book-status">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Completed</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="book-card">
+                    <div class="book-cover learning">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <div class="book-info">
+                        <h3>A Mind for Numbers</h3>
+                        <p class="book-author">By Barbara Oakley</p>
+                        <p class="book-desc">How to excel at math and science even if you flunked algebra.</p>
+                        <div class="book-tags">
+                            <span class="book-tag">Learning</span>
+                            <span class="book-tag">Study Techniques</span>
+                            <span class="book-tag">Self-Improvement</span>
+                        </div>
+                        <div class="book-status">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Completed</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="book-card">
+                    <div class="book-cover creativity">
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+                    <div class="book-info">
+                        <h3>Steal Like an Artist</h3>
+                        <p class="book-author">By Austin Kleon</p>
+                        <p class="book-desc">10 things nobody told you about being creative in the digital age.</p>
+                        <div class="book-tags">
+                            <span class="book-tag">Creativity</span>
+                            <span class="book-tag">Art</span>
+                            <span class="book-tag">Inspiration</span>
+                        </div>
+                        <div class="book-status">
+                            <i class="fas fa-book-open"></i>
+                            <span>Reading Soon</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="book-card">
+                    <div class="book-cover music">
+                        <i class="fas fa-guitar"></i>
+                    </div>
+                    <div class="book-info">
+                        <h3>The Music Lesson</h3>
+                        <p class="book-author">By Victor L. Wooten</p>
+                        <p class="book-desc">A spiritual search for growth through music from a master bass guitarist.</p>
+                        <div class="book-tags">
+                            <span class="book-tag">Music</span>
+                            <span class="book-tag">Guitar</span>
+                            <span class="book-tag">Spiritual</span>
+                        </div>
+                        <div class="book-status">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Completed</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="book-card">
+                    <div class="book-cover web-dev">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <div class="book-info">
+                        <h3>Learning Web Development</h3>
+                        <p class="book-author">Various Resources</p>
+                        <p class="book-desc">Online tutorials and documentation for learning web development basics.</p>
+                        <div class="book-tags">
+                            <span class="book-tag">Web Development</span>
+                            <span class="book-tag">Online Learning</span>
+                            <span class="book-tag">Resources</span>
+                        </div>
+                        <div class="book-status">
+                            <i class="fas fa-check-circle"></i>
+                            <span>In Progress</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="reading-stats">
+                <div class="stat-item">
+                    <i class="fas fa-book"></i>
+                    <h4>15+</h4>
+                    <p>Books Read</p>
+                </div>
+                <div class="stat-item">
+                    <i class="fas fa-clock"></i>
+                    <h4>30 min/day</h4>
+                    <p>Average Reading Time</p>
+                </div>
+                <div class="stat-item">
+                    <i class="fas fa-bookmark"></i>
+                    <h4>3</h4>
+                    <p>Currently Reading</p>
+                </div>
+                <div class="stat-item">
+                    <i class="fas fa-star"></i>
+                    <h4>Favorite Genre</h4>
+                    <p>Tech & Self-Improvement</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="content-section">
+            <h2><i class="fas fa-envelope"></i> Get In Touch</h2>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <p>I'm always open to discussing technology, music, books, or potential collaborations! Feel free to reach out if you'd like to connect.</p>
+                    <div class="contact-details">
+                        <p><i class="fas fa-envelope"></i> your.email@example.com</p>
+                        <p><i class="fas fa-phone"></i> +994 XX XXX XX XX</p>
+                        <p><i class="fas fa-map-marker-alt"></i> Azerbaijan</p>
+                    </div>
+                </div>
+                
+                <div class="social-links">
+                    <h3>Connect With Me</h3>
+                    <div class="social-icons">
+                        <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer" class="social-link github" title="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://instagram.com/yourusername" target="_blank" rel="noopener noreferrer" class="social-link instagram" title="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/yourusername" target="_blank" rel="noopener noreferrer" class="social-link linkedin" title="LinkedIn">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://twitter.com/yourusername" target="_blank" rel="noopener noreferrer" class="social-link twitter" title="Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="https://www.goodreads.com/yourusername" target="_blank" rel="noopener noreferrer" class="social-link goodreads" title="Goodreads">
+                            <i class="fab fa-goodreads"></i>
+                        </a>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 Nural Rahmanli. All rights reserved.</p>
+            <p>Developer • Guitarist • Problem Solver • Lifelong Learner</p>
+            <div class="footer-links">
+                <a href="#home">Home</a> | 
+                <a href="#about">About</a> | 
+                <a href="#projects">Projects</a> | 
+                <a href="#skills">Skills</a> | 
+                <a href="#bookshelf">Bookshelf</a> | 
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <a href="#home" class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+</html>
